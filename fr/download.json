@@ -10,7 +10,7 @@
   "postDownloadActionExecutor.pluginInstall/status": "Installation de plugin...",
   "postDownloadActionExecutor.pluginUninstall/status": "Désinstallation de plugin...",
 
-  "finalizing": "Finalisation... (cela peut prendre quelques instants)",
+  "finalizing": "Finalisation du téléchargement... (cela peut prendre quelques instants)",
   "noOptions": "Aucune option compatible disponible pour le téléchargement",
 
   "deeplink/confirmation/title": "Télécharger le modèle depuis Hugging Face 🤗",
@@ -19,7 +19,7 @@
   "deeplink/confirmation/selectOption": "Sélectionner l'option de téléchargement",
   "deeplink/confirmation/recommendedOption": "Probablement la meilleure option pour la plupart des utilisateurs",
   "deeplink/confirmation/downloadButton": "Télécharger",
-  "deeplink/confirmation/nevermindButton": "Peu importe",
+  "deeplink/confirmation/nevermindButton": "Laisser tomber",
   "deeplink/confirmation/modelPresent/title": "Modèle Hugging Face trouvé ✅",
   "deeplink/confirmation/modelPresent/body": "Bonne nouvelle ! Ce fichier modèle est déjà disponible sur votre machine locale.",
   "deeplink/confirmation/loadInChat": "Charger {{ modelName }} dans une nouvelle discussion",

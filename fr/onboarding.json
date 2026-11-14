@@ -9,7 +9,7 @@
     "instructions": {
       "attach_files": {
         "title": "Joindre des fichiers",
-        "description": "Vous pouvez télécharger jusqu'à 5 fichiers à la fois, pour une taille maximale de 30 Mo. Les formats pris en charge incluent PDF, DOCX, TXT et CSV."
+        "description": "Vous pouvez téléverser jusqu'à 5 fichiers à la fois, pour une taille cumulée maximale de 30 Mo. Les formats pris en charge incluent PDF, DOCX, TXT et CSV."
       },
       "be_specific": {
         "title": "Soyez précis",
@@ -24,19 +24,19 @@
 
   "toolUse": {
     "step_0": {
-      "title": "Bêta : Utilisation d'outils 🛠️ (fonction d'appels)",
+      "title": "Bêta : Utilisation d'outils 🛠️ (appel de fonctions)",
       "text_0": "Certains modèles (par exemple Llama 3.1/3.2, Mistral, Qwen et d'autres) ont été entraînés à utiliser des outils.",
       "text_1": "Concrètement, cela signifie que vous fournissez un ensemble d'« outils » (signatures de fonctions) au LLM dans un format très particulier, et que le LLM peut décider de les « appeler » ou non en fonction de la requête de l'utilisateur.",
       "text_2": "Vous pouvez imaginer des cas d'utilisation tels que les requêtes d'une API, l'exécution de code ou tout autre élément pouvant être exprimé sous forme d'appel de fonction."
     },
     "step_1": {
-      "title": "Commencer à utiliser l'outil",
-      "toolUseCanWorkWithAnyModel": "Les modèles qui ont été formés à l'utilisation d'outils seront plus performants que les autres, mais vous pouvez essayer d'utiliser des outils avec n'importe quel modèle. Lisez la <customlink>documentation</customlink> pour en savoir plus.\nLes modèles qui ont été formés à l'utilisation d'outils seront signalés par un nouveau badge :",
+      "title": "Débuter avec l'utilisation d'outils",
+      "toolUseCanWorkWithAnyModel": "Les modèles qui ont été entraînés à l'utilisation d'outils seront plus performants que les autres, mais vous pouvez essayer d'utiliser des outils avec n'importe quel modèle. Lisez la <customlink>documentation</customlink> pour en savoir plus.\nLes modèles qui ont été formés à l'utilisation d'outils seront signalés par un nouveau badge :",
       "hasCompatibleModel": "🎉 On dirait que vous avez déjà des modèles avec la prise en charge d'outils !",
       "downloadRecommendedModel": "Télécharger un modèle qui a été entraîné à l'utilisation d'outils :"
     },
     "nextButton": "Suivant",
     "letsGoButton": "Charger le modèle et démarrer le serveur",
-    "doneButton": "Rejeter"
+    "doneButton": "Ignorer"
   }
 }
