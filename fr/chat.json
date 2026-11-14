@@ -65,7 +65,7 @@
   "actions/continueCurrentModel": "Utiliser le modèle actuel",
   "actions/continueCurrentModel/tooltip": "Modèle actuel : {{currentModel}}",
   "actions/changeToLastUsedModel": "Charger {{lastModel}}",
-  "actions/changeToLastUsedModel/error": "Échec du chargement du dernier modèle utilisé",
+  "actions/changeToLastUsedModel/error": "Échec du passage au dernier modèle utilisé.",
   "actions/changeToLastUsedModel/tooltip": "Vous avez utilisé un modèle différent la dernière fois que vous avez envoyé un message dans ce chat. Cliquez pour décharger le modèle actuellement sélectionné ({{currentModel}}) et charger le modèle qui a été utilisé en dernier avec ce chat:\n\n{{lastModel}}",
   "actions/switchToLastUsedModel": "Basculer vers {{lastModel}}",
   "actions/switchToLastUsedModel/tooltip": "Cliquez pour basculer vers le modèle qui a été utilisé en dernier avec ce chat :\n\n{{lastModel}}",
@@ -91,6 +91,7 @@
   "actions/createChatAtRoot/error": "Échec de la création du chat à la racine",
   "actions/createFolderAtRoot": "Nouveau Dossier...",
   "actions/createFolderAtRoot/error": "Échec de la création du dossier à la racine",
+  "actions/createFolder/error": "Échec de la création du dossier",
   "actions/openInFolder/mac": "Afficher dans le Finder",
   "actions/openInFolder/pc": "Afficher dans l'Explorateur de fichiers",
 
@@ -168,7 +169,7 @@
 
   "noModels.indexing": "Indexation des fichiers modèles... (cela peut prendre un moment)",
   "noModels.downloading": "Téléchargement de votre premier LLM...",
-  "noModels": "Pas encore de LLM ! Téléchargez-en un pour commencer !"
+  "noModels": "Pas encore de LLM ! Téléchargez-en un pour commencer !",
 
   "plugins": {
     "pluginTrigger": {
@@ -194,7 +195,9 @@
       },
       "startRunningDevelopmentPlugin/error": "Échec de démarrage du plugin en mode développement",
       "stopRunningDevelopmentPlugin/error": "Impossible d'arrêter l'exécution du plugin en mode développement",
-      "forceReInitPlugin/error": "Échec de redémarrage du plugin"
+      "forceReInitPlugin/error": "Échec de redémarrage du plugin",
+      "signOutMcpPlugin/error": "Échec de la déconnexion du plugin",
+      "cancelMcpAuthentication/error": "Échec de l'annulation de l'authentification du plugin"
     },
     "pluginConfiguration": {
       "title": "Configuration du plugin",
