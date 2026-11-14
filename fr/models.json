@@ -104,7 +104,7 @@
   "loader.guardrails.notEnoughResources/options": "Options",
   "loader.guardrails.notEnoughResources.moreInfoSection.appearsNotEnoughMemory": "Il semble que votre système n'ait pas assez de mémoire pour charger ce modèle.",
   "loader.guardrails.notEnoughResources.moreInfoSection.ifYouBelieveThisIsIncorrect": "Vous pouvez ajuster les sécurités de chargement des modèles dans les paramètres ou maintenir <altOptionKey /> pour charger quand même.",
-  "loader.guardrails.notEnoughResources.moreInfoSection.warning": "Charger un modèle trop volumineux peut surcharger votre système et le faire se bloquer.",
+  "loader.guardrails.notEnoughResources.moreInfoSection.warning": "Charger un modèle trop volumineux peut surcharger votre système et le bloquer.",
   "loader.guardrails.notEnoughResources.alwaysAllowLoadAnyway": "(Non recommandé) Toujours autoriser « Charger quand même » sans maintenir Alt/Option",
 
   "virtual": {
