@@ -1,5 +1,305 @@
 {
-    "copyLmStudioLinkButton/toolTip": "Copier le lien de téléchargement du modèle",
+  "copyLmStudioLinkButton/toolTip": "Copier le lien de téléchargement du modèle",
 
-    "filter.noMatches": "Aucun résultat"
+  "filter.noMatches": "Aucun résultat",
+  "longRunningTask": {
+    "unbundlingDependencies": {
+      "badge": "Extraction des ressources"
+    },
+    "performingBackendHardwareSurvey": {
+      "badge": "Vérification de la compatibilité des environnements d'exécution"
+    },
+    "indexingRuntimes": {
+      "badge": "Indexation des environnements d'exécution"
+    },
+    "indexingModels": {
+      "badge": "Indexation des modèles"
+    },
+    "authenticating": {
+      "badge": "Authentification"
+    },
+    "autoUpdatingExtensionPack": {
+      "badge": "Mise à jour du pack d'extensions ({{name}} v{{version}})"
+    }
+  },
+  "auth": {
+    "prompt": "Connectez-vous au Hub LM Studio",
+    "authError": "Échec de l'authentification",
+    "noAccount": "Vous n'avez pas de compte ?",
+    "signUp": "S'inscrire",
+    "havingTrouble": "Un problème ?",
+    "retry": "Réessayer"
+  },
+  "artifacts": {
+    "fetchError": "Échec de la récupération des artefacts",
+    "organizationVisible": "Organisation visible"
+  },
+
+  "incompatible": "Incompatible",
+  "compatible": "Compatible",
+  "public": "Public",
+  "private": "Privé",
+  "yes": "Oui",
+  "no": "Non",
+  "go": "Aller",
+
+  "proceedWithEllipsis": "Continuer...",
+  "proceed": "Continuer",
+  "inProgress": "En cours...",
+  "failed": "Échec",
+  "pending": "En attente",
+  "doneWithExclamation": "Terminé !",
+  "done": "Terminé",
+  "beta": "Bêta",
+
+  "complete": {
+    "completeWithEllipsis": "Terminer...",
+    "complete": "Terminer",
+    "completingWithEllipsis": "Finalisation...",
+    "completing": "Finalisation",
+    "completedWithExclamation": "Terminé !",
+    "completed": "Terminé"
+  },
+
+  "cancel": {
+    "cancelWithEllipsis": "Annuler...",
+    "cancel": "Annuler",
+    "cancelingWithEllipsis": "Annulation...",
+    "canceling": "Annulation",
+    "canceled": "Annulé"
+  },
+
+  "next": {
+    "nextWithEllipsis": "Suivant...",
+    "next": "Suivant"
+  },
+
+  "back": {
+    "backWithEllipsis": "Retour...",
+    "back": "Retour"
+  },
+
+  "close": {
+    "closeWithEllipsis": "Fermer...",
+    "close": "Fermer",
+    "closingWithEllipsis": "Fermeture...",
+    "closing": "Fermeture",
+    "closedWithExclamation": "Fermé !",
+    "closed": "Fermé"
+  },
+
+  "delete": {
+    "deleteWithEllipsis": "Supprimer...",
+    "delete": "Supprimer",
+    "deletingWithEllipsis": "Suppression...",
+    "deleting": "Suppression",
+    "deletedWithExclamation": "Supprimé !",
+    "deleted": "Supprimé"
+  },
+
+  "retry": {
+    "retryWithEllipsis": "Réessayer...",
+    "retry": "Réessayer",
+    "retryingWithEllipsis": "Nouvelle tentative...",
+    "retrying": "Nouvelle tentative"
+  },
+
+  "refresh": {
+    "refreshWithEllipsis": "Rafraîchir...",
+    "refresh": "Rafraîchir",
+    "refreshingWithEllipsis": "Rafraîchissement...",
+    "refreshing": "Rafraîchissement",
+    "refreshedWithExclamation": "Rafraîchi !",
+    "refreshed": "Rafraîchi"
+  },
+
+  "confirm": {
+    "confirm": "Confirmer",
+    "confirmingWithEllipsis": "Confirmation...",
+    "confirming": "Confirmation",
+    "confirmedWithExclamation": "Confirmé !",
+    "confirmed": "Confirmé"
+  },
+
+  "copy": {
+    "copyWithEllipsis": "Copier...",
+    "copy": "Copier",
+    "copyingWithEllipsis": "Copie...",
+    "copying": "Copie",
+    "copiedWithExclamation": "Copié !",
+    "copied": "Copié"
+  },
+
+  "edit": {
+    "editWithEllipsis": "Modifier...",
+    "edit": "Modifier",
+    "editingWithEllipsis": "Modification...",
+    "editing": "Modification",
+    "editedWithExclamation": "Modifié !",
+    "edited": "Modifié"
+  },
+
+  "load": {
+    "loadWithEllipsis": "Charger...",
+    "load": "Charger",
+    "loadingWithEllipsis": "Chargement...",
+    "loading": "Chargement",
+    "loadedWithExclamation": "Chargé !",
+    "loaded": "Chargé"
+  },
+
+  "save": {
+    "saveWithEllipsis": "Enregistrer...",
+    "save": "Enregistrer",
+    "savingWithEllipsis": "Enregistrement...",
+    "saving": "Enregistrement",
+    "savedWithExclamation": "Enregistré !",
+    "saved": "Enregistré"
+  },
+
+  "saveAs": {
+    "saveAsWithEllipsis": "Enregistrer sous...",
+    "saveAs": "Enregistrer sous"
+  },
+
+  "saveAsNew": {
+    "saveAsNewWithEllipsis": "Enregistrer sous...",
+    "saveAsNew": "Enregistrer sous"
+  },
+
+  "search": {
+    "searchWithEllipsis": "Rechercher...",
+    "search": "Rechercher",
+    "searchingWithEllipsis": "Recherche...",
+    "searching": "Recherche"
+  },
+
+  "update": {
+    "updateWithEllipsis": "Mettre à jour...",
+    "update": "Mettre à jour",
+    "updatingWithEllipsis": "Mise à jour...",
+    "updating": "Mise à jour",
+    "updatedWithExclamation": "Mis à jour !",
+    "updated": "Mis à jour"
+  },
+
+  "create": {
+    "createWithEllipsis": "Créer...",
+    "create": "Créer",
+    "creatingWithEllipsis": "Création...",
+    "creating": "Création",
+    "createdWithExclamation": "Créé !",
+    "created": "Créé"
+  },
+
+  "reset": {
+    "resetWithEllipsis": "Réinitialiser...",
+    "reset": "Réinitialiser",
+    "resettingWithEllipsis": "Réinitialisation...",
+    "resetting": "Réinitialisation"
+  },
+
+  "pause": {
+    "pause": "Pause",
+    "pausingWithEllipsis": "Mise en pause...",
+    "pausing": "Mise en pause",
+    "paused": "En pause"
+  },
+
+  "download": {
+    "download": "Télécharger",
+    "downloadingWithEllipsis": "Téléchargement...",
+    "downloading": "Téléchargement",
+    "downloadedWithExclamation": "Téléchargé !",
+    "downloaded": "Téléchargé"
+  },
+
+  "upload": {
+    "uploadWithEllipsis": "Téléverser...",
+    "upload": "Téléverser",
+    "uploadingWithEllipsis": "Téléversement...",
+    "uploading": "Téléversement",
+    "uploadedWithExclamation": "Téléversé !",
+    "uploaded": "Téléversé"
+  },
+
+  "remove": {
+    "removeWithEllipsis": "Retirer...",
+    "remove": "Retirer",
+    "removingWithEllipsis": "Retrait...",
+    "removing": "Retrait",
+    "removedWithExclamation": "Retiré !",
+    "removed": "Retiré"
+  },
+
+  "uninstall": {
+    "uninstallWithEllipsis": "Désinstaller...",
+    "uninstall": "Désinstaller",
+    "uninstallingWithEllipsis": "Désinstallation...",
+    "uninstalling": "Désinstallation",
+    "uninstalledWithExclamation": "Désinstallé !",
+    "uninstalled": "Désinstallé"
+  },
+
+  "resume": {
+    "resumeWithEllipsis": "Reprendre...",
+    "resume": "Reprendre",
+    "resumingWithEllipsis": "Reprise...",
+    "resuming": "Reprise"
+  },
+
+  "start": {
+    "startWithEllipsis": "Démarrer...",
+    "start": "Démarrer",
+    "startingWithEllipsis": "Démarrage...",
+    "starting": "Démarrage",
+    "started": "Démarré"
+  },
+
+  "stop": {
+    "stopWithEllipsis": "Arrêter...",
+    "stop": "Arrêter",
+    "stoppingWithEllipsis": "Arrêt...",
+    "stopping": "Arrêt",
+    "stoppedWithExclamation": "Arrêté !",
+    "stopped": "Arrêté"
+  },
+
+  "import": {
+    "importWithEllipsis": "Importer...",
+    "import": "Importer",
+    "importingWithEllipsis": "Importation...",
+    "importing": "Importation",
+    "importedWithExclamation": "Importé !",
+    "imported": "Importé"
+  },
+
+  "letsGo": {
+    "letsGo": "C'est parti",
+    "letsGoWithEllipsis": "C'est parti...",
+    "letsGoWithExclamation": "C'est parti !"
+  },
+
+  "run": {
+    "runWithEllipsis": "Exécuter...",
+    "run": "Exécuter",
+    "runningWithEllipsis": "Exécution...",
+    "running": "Exécution"
+  },
+
+  "configure": {
+    "configureWithEllipsis": "Configurer...",
+    "configure": "Configurer",
+    "configuringWithEllipsis": "Configuration...",
+    "configured": "Configuré"
+  },
+
+  "publish": {
+    "publishWithEllipsis": "Publier...",
+    "publish": "Publier",
+    "publishingWithEllipsis": "Publication...",
+    "publishing": "Publication",
+    "publishedWithExclamation": "Publié !",
+    "published": "Publié"
+  }
 }

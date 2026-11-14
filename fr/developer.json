@@ -1,8 +1,8 @@
 {
-  "tabs/server": "Serveur Local",
+  "tabs/server": "Serveur local",
   "tabs/extensions": "Environnements d'exécution LM",
   "loadSettings/title": "Charger les paramètres",
-  "modelSettings/placeholder": "Sélectionnez un modèle pour le configurer",
+  "modelSettings/placeholder": "Aucun modèle sélectionné",
 
   "loadedModels/noModels": "Aucun modèle chargé",
 
@@ -11,7 +11,7 @@
   "serverOptions/port/hint": "Définissez le port réseau que le serveur local utilisera. Par défaut, LM Studio utilise le port 1234. Vous devrez peut-être le modifier si le port est déjà utilisé.",
   "serverOptions/port/subtitle": "Le port d'écoute",
   "serverOptions/autostart/title": "Démarrage automatique du serveur",
-  "serverOptions/autostart/hint": "Démarrer le serveur local automatiquement lorsqu'un modèle est chargé",
+  "serverOptions/autostart/hint": "Démarrer automatiquement le serveur LLM local de LM Studio au lancement de l'application ou du service",
   "serverOptions/port/integerWarning": "Le numéro de port doit être un nombre entier",
   "serverOptions/port/invalidPortWarning": "Le port doit être compris entre 1 et 65535",
   "serverOptions/cors/title": "Activer CORS",
@@ -27,20 +27,52 @@
   "serverOptions/contentLogging/title": "Journaliser les requêtes et réponses",
   "serverOptions/contentLogging/subtitle": "Paramètres de journalisation des requêtes/réponses locales",
   "serverOptions/contentLogging/hint": "Détermine si les requêtes et/ou les réponses doivent être enregistrées dans le fichier journal du serveur local.",
+  "serverOptions/redactContent/title": "Masquer le contenu",
+  "serverOptions/redactContent/hint": "Lorsque activé, empêche l'enregistrement dans les journaux des données sensibles, comme le contenu des requêtes et des réponses.",
+  "serverOptions/logIncomingTokens/title": "Journaliser les jetons entrants",
+  "serverOptions/logIncomingTokens/hint": "Détermine si chaque jeton doit être journalisé au fur et à mesure de sa génération.",
+  "serverOptions/fileLoggingMode/title": "Mode de journalisation dans les fichiers",
+  "serverOptions/fileLoggingMode/off/title": "DÉSACTIVÉ",
+  "serverOptions/fileLoggingMode/off/hint": "Ne pas créer de fichiers journaux",
+  "serverOptions/fileLoggingMode/succinct/title": "Concis",
+  "serverOptions/fileLoggingMode/succinct/hint": "Journaliser le même contenu que dans la console. Les requêtes longues seront tronquées.",
+  "serverOptions/fileLoggingMode/full/title": "Complet",
+  "serverOptions/fileLoggingMode/full/hint": "Ne pas tronquer les requêtes longues.",
   "serverOptions/jitModelLoading/title": "Chargement de modèle à la demande",
   "serverOptions/jitModelLoading/hint": "Lorsque activé, si une requête spécifie un modèle qui n'est pas chargé, il sera automatiquement chargé et utilisé. De plus, l'endpoint '/v1/models' inclura également les modèles qui ne sont pas encore chargés.",
   "serverOptions/loadModel/error": "Échec du chargement du modèle",
+  "serverOptions/jitModelLoadingTTL/title": "Décharger automatiquement les modèles JIT inutilisés",
+  "serverOptions/jitModelLoadingTTL/hint": "Un modèle chargé à la demande (JIT) pour répondre à une requête API sera automatiquement déchargé après une certaine durée d'inactivité (TTL).",
+  "serverOptions/jitModelLoadingTTL/ttl/label": "TTL d'inactivité maximale",
+  "serverOptions/jitModelLoadingTTL/ttl/unit": "minutes",
+  "serverOptions/unloadPreviousJITModelOnLoad/title": "Ne conserver que le dernier modèle chargé à la demande",
+  "serverOptions/unloadPreviousJITModelOnLoad/hint": "S'assure qu'au moins 1 modèle est chargé à la demande à tout moment (décharge le modèle précédent)",
+  "serverOptions/allowMcp/title": "Autoriser les MCP distants",
+  "serverOptions/allowMcp/hint": "Autoriser l'utilisation de MCP qui ne sont pas dans votre mcp.json. Ces connexions MCP sont éphémères et n'existent que le temps de la requête. Pour le moment, seuls les MCP distants sont pris en charge.",
+  "serverOptions/allowMcp/mode/off": "Désactivé",
+  "serverOptions/allowMcp/mode/off/hint": "Ne pas autoriser les requêtes du serveur à utiliser MCP",
+  "serverOptions/allowMcp/mode/remote": "Distant",
+  "serverOptions/allowMcp/mode/remote/hint": "Autoriser la connexion à des serveurs MCP distants",
+
+  "serverOptions/start/error": "Échec du démarrage du serveur",
+  "serverOptions/stop/error": "Échec de l'arrêt du serveur",
 
   "serverLogs/scrollToBottom": "Aller en bas",
   "serverLogs/clearLogs": "Effacer les journaux ({{shortcut}})",
   "serverLogs/openLogsFolder": "Ouvrir le dossier des journaux du serveur",
 
   "runtimeSettings/title": "Paramètres d'environnement d'exécution",
-  "runtimeSettings/chooseRuntime/title": "Configurer les environnements d'exécution",
+  "runtimeSettings/chooseRuntime/title": "Sélections",
   "runtimeSettings/chooseRuntime/description": "Sélectionnez un environnement d'exécution pour chaque format de modèle",
   "runtimeSettings/chooseRuntime/showAllVersions/label": "Afficher tous les environnements d'exécution",
   "runtimeSettings/chooseRuntime/showAllVersions/hint": "Par défaut, LM Studio n'affiche que la dernière version de chaque environnement d'exécution compatible. Activez cette option pour voir tous les environnements disponibles.",
   "runtimeSettings/chooseRuntime/select/placeholder": "Sélectionner un environnement d'exécution",
+
+  "runtimeSettings/chooseFrameworks/title": "Frameworks",
+  "runtimeSettings/chooseFrameworks/description": "Sélectionnez un framework à utiliser pour chaque fonctionnalité",
+  "runtimeSettings/chooseFramework/documentParser/builtIn/label": "Analyseur intégré",
+  "runtimeSettings/chooseFramework/documentParser/select/label": "Analyseur de documents",
+  "runtimeSettings/chooseFramework/documentParser/select/placeholder": "Sélectionner un analyseur de documents",
 
   "runtimeOptions/uninstall": "Désinstaller",
   "runtimeOptions/uninstallDialog/title": "Désinstaller {{runtimeName}} ?",
@@ -53,16 +85,113 @@
   "runtimeOptions/downloadIncompatibleRuntime": "Cet environnement d'exécution a été jugé incompatible avec votre machine. Il ne fonctionnera probablement pas.",
   "runtimeOptions/noRuntimes": "Aucun environnement d'exécution trouvé",
 
+  "runtimes": {
+    "manageLMRuntimes": "Gérer les environnements d'exécution LM",
+    "includeOlderRuntimeVersions": "Inclure les anciennes versions",
+    "dismiss": "Ignorer",
+    "updateAvailableToast": {
+      "title": "Mise à jour de l'environnement d'exécution LM disponible !"
+    },
+    "updatedToast": {
+      "title": " ✅ Environnement d'exécution LM mis à jour : {{runtime}} → v{{version}}",
+      "preferencesUpdated": "Les modèles {{compatibilityTypes}} nouvellement chargés utiliseront l'environnement d'exécution mis à jour."
+    },
+    "noAvx2ErrorMessage": "Tous les environnements d'exécution LM nécessitent actuellement un processeur compatible AVX2",
+    "downloadableRuntimes": {
+      "runtimeExtensionPacks": "Packs d'extensions d'exécution",
+      "refresh": "Rafraîchir",
+      "refreshing": "Rafraîchissement...",
+      "filterSegment": {
+        "compatibleOnly": "Compatibles uniquement",
+        "all": "Tous"
+      },
+      "card": {
+        "releaseNotes": "Notes de mise à jour",
+        "latestVersionInstalled": "Dernière version installée",
+        "updateAvailable": "Mise à jour disponible"
+      }
+    },
+    "installedRuntimes": {
+      "manage": {
+        "title": "Gérer les environnements d'exécution actifs"
+      },
+      "dropdownOptions": {
+        "installedVersions": "Gérer les versions",
+        "close": "Fermer"
+      },
+      "tabs": {
+        "all": "Tous",
+        "frameworks": "Mes frameworks",
+        "engines": "Mes moteurs"
+      },
+      "detailsModal": {
+        "installedVersions": "Versions installées de {{runtimeName}}",
+        "manifestJsonTitle": "JSON du manifeste (avancé)",
+        "releaseNotesTitle": "Notes de mise à jour",
+        "noReleaseNotes": "Aucune note de mise à jour disponible pour cette version",
+        "back": "Retour",
+        "close": "Fermer"
+      },
+      "noEngines": "Aucun moteur installé",
+      "noFrameworks": "Aucun framework installé"
+    }
+  },
+
   "inferenceParams/noParams": "Aucun paramètre d'inférence configurable disponible pour ce type de modèle",
 
-  "endpoints/openaiCompatRest/title": "Points d'accès pris en charge (type OpenAI)",
+  "quickDocs": {
+    "tabChipTitle": "Documentation développeur",
+    "newToolUsePopover": "Les extraits de code sont maintenant disponibles ici dans la « Documentation développeur ». Cliquez ici pour découvrir l'utilisation d'outils !",
+    "newToolUsePopoverTitle": "📚 Documentation développeur",
+    "learnMore": "ℹ️ 👾 Pour en savoir plus sur les points d'accès du serveur local de LM Studio, consultez la [documentation](https://lmstudio.ai/docs).",
+    "helloWorld": {
+      "title": "Hello, World!"
+    },
+    "chat": {
+      "title": "Chat"
+    },
+    "structuredOutput": {
+      "title": "Sortie structurée"
+    },
+    "imageInput": {
+      "title": "Entrée d'image"
+    },
+    "embeddings": {
+      "title": "Plongements"
+    },
+    "toolUse": {
+      "title": "Utilisation d'outils",
+      "tab": {
+        "saveAsPythonFile": "Enregistrer en fichier Python",
+        "runTheScript": "Exécutez le script :",
+        "savePythonFileCopyPaste": "Enregistrer en fichier Python pour une commande à copier-coller"
+      }
+    },
+    "newBadge": "Nouveau"
+  },
+
+  "endpoints/openaiCompatRest/title": "Points d'accès pris en charge{{extra}}",
+  "endpoints/openaiCompatRest/segmentedLabel": "Type OpenAI",
   "endpoints/openaiCompatRest/getModels": "Lister les modèles actuellement chargés",
-  "endpoints/openaiCompatRest/postCompletions": "Mode Complétion de texte. Prédit le(s) prochain(s) token(s) étant donné une invite. Note : OpenAI considère ce point d'accès comme 'déprécié'.",
+  "endpoints/openaiCompatRest/postCompletions": "Mode Complétion de texte. Prédit le(s) prochain(s) jeton(s) étant donné une invite. Note : OpenAI considère ce point d'accès comme 'déprécié'.",
   "endpoints/openaiCompatRest/postChatCompletions": "Complétion de chat. Envoie un historique de chat au modèle pour prédire la prochaine réponse de l'assistant",
-  "endpoints/openaiCompatRest/postEmbeddings": "Embedding de texte. Génère des embeddings de texte pour une entrée donnée. Accepte une chaîne ou un tableau de chaînes.",
+  "endpoints/openaiCompatRest/postEmbeddings": "Plongement de texte. Génère des plongements de texte pour une entrée donnée. Accepte une chaîne ou un tableau de chaînes.",
+  "endpoints/openaiCompatRest/postResponses": "Interface avancée pour générer des réponses de modèle. Créez des interactions avec état en passant l'identifiant d'une réponse précédente en entrée de la suivante.",
+  "endpoints/lmStudioRest/segmentedLabel": "LM Studio",
+  "endpoints/lmStudioRestV1/getModels": "Lister les modèles disponibles",
+  "endpoints/lmStudioRestV1/postModelsLoad": "Charger un modèle avec des options",
+  "endpoints/lmStudioRestV1/postModelsDownload": "Télécharger un modèle",
+  "endpoints/lmStudioRestV1/postChat": "Discuter avec un modèle. Prend en charge les conversations multi-tours avec état et MCP",
+  "endpoints/lmStudioRestV1/getModelsDownloadStatus": "Obtenir l'état d'un téléchargement de modèle",
+  "endpoints/anthropicCompatRest/segmentedLabel": "Compatible Anthropic",
 
   "model.createVirtualModelFromInstance": "Enregistrer les paramètres comme nouveau modèle virtuel",
   "model.createVirtualModelFromInstance/error": "Échec de l'enregistrement des paramètres comme nouveau modèle virtuel",
+
+  "model": {
+    "toolUseSectionTitle": "Utilisation d'outils",
+    "toolUseDescription": "Ce modèle a été détecté comme entraîné pour l'utilisation d'outils\n\nOuvrez la <custom-link>documentation développeur</custom-link> pour plus d'informations"
+  },
 
   "apiConfigOptions/title": "Configuration de l'API"
 }
