@@ -1,6 +1,6 @@
 {
   "modelLoaderPlaceholder": "Choisissez un modèle à charger",
-  "systemPromptPlaceholder": "Définir le prompt système",
+  "systemPromptPlaceholder": "Définir l'instruction système",
   "userRoleText": "Utilisateur",
   "assistantRoleText": "Assistant",
   "addMessageButtonText": "Ajouter",
@@ -72,7 +72,7 @@
   "actions/loadModel": "Charger un modèle",
   "actions/toggleViewingProcessed/currentlyFalse": "Affichage actuel du message original. Cliquez pour voir le message prétraité.",
   "actions/toggleViewingProcessed/currentlyTrue": "Affichage actuel du message prétraité. Cliquez pour voir le message original.",
-  "actions/toggleViewingProcessed/hint": "Avant qu'un message ne soit envoyé au modèle, il peut être prétraité par un préprocesseur de prompt. Cliquez pour basculer entre l'affichage du message original et du message prétraité. Seul le message prétraité est envoyé au modèle.",
+  "actions/toggleViewingProcessed/hint": "Avant qu'un message ne soit envoyé au modèle, il peut être prétraité par un préprocesseur d'instructions. Cliquez pour basculer entre l'affichage du message original et du message prétraité. Seul le message prétraité est envoyé au modèle.",
   "editMessageConfirm/title": "Conserver les modifications ?",
   "editMessageConfirm/message": "Vous avez modifié un message. Voulez-vous conserver ces modifications ?",
   "editMessageConfirm/keepEditing": "Continuer la modification",
@@ -80,7 +80,7 @@
   "editMessageConfirm/discard": "Annuler les modifications",
   "tokenCount/totalNotAvailable": "Jetons : {{current}}",
   "tokenCount/totalAvailable": "Jetons : {{current}}/{{total}}",
-  "tokenCount/totalAvailablePercentage": "Le contexte est rempli à {{percentage}}%",
+  "tokenCount/totalAvailablePercentage": "Le contexte est rempli à {{percentage}} %",
   "tokenCount/contextOverflow": "Le contexte non traité est plus grand que la limite maximale de jetons du modèle. Selon votre politique de débordement de contexte, le contexte peut être tronqué ou le message peut ne pas être envoyé.",
   "modelLoader/manualLoadParams/label": "Choisir manuellement les paramètres de chargement du modèle",
   "modelLoader/manualLoadParams/hint/before": "(ou maintenez ",
@@ -242,12 +242,12 @@
     "stopReason.maxPredictedTokensReached": "Maximum de jetons prédits atteint",
     "stopReason.contextLengthReached": "Limite de longueur du contexte atteinte",
     "speculativeDecodedBy": "Modèle brouillon : {{decodedBy}}",
-    "speculativeDecodingStats": "{{accepted}}/{{total}} jetons du modèle brouillon acceptés ({{percentage}}%)",
-    "speculativeDecodingAcceptedPercentage": "{{percentage}}% des jetons du modèle brouillon acceptés",
+    "speculativeDecodingStats": "{{accepted}}/{{total}} jetons du modèle brouillon acceptés ({{percentage}} %)",
+    "speculativeDecodingAcceptedPercentage": "{{percentage}} % des jetons du modèle brouillon acceptés",
     "speculativeDecodingTooltip": "{{accepted}}/{{total}} jetons du modèle brouillon acceptés"
   },
 
   "tabs": {
-    "systemPromptEditorTab.headerLabel": "Édition du prompt système"
+    "systemPromptEditorTab.headerLabel": "Édition de l'instruction système"
   }
 }
